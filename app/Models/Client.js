@@ -6,22 +6,14 @@ const Model = use('Model')
 class Client extends Model {
 
   /** Um client pode fazer várias compras */
-  // sales() {
-  //   return this.belongsToMany("App/Models/Sale")
-  // }
-
-  clients() {
-    return belongsTo('App/Models/Client')
-  }
-
   sales() {
     return this.hasMany("App/Models/Sale")
   }
 
+  /** Relacionamento dos clientes com os produtos das vendas */
   products(){
     return this.belongsTo('App/Models/Product')
   }
-
 
 }
 
