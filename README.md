@@ -1,7 +1,7 @@
 
-# Be Mobile - Desafio Back-end
+# Desafio técnico Back-end
 
-O desafio de back-end da Be Mobile consiste em estruturar uma API RESTful e um banco de dados ligado a esta API. Trate-se de um sistema que permite cadastrar usuários externamente e, ao realizarem login, poderão registrar clientes, produtos e vendas. O(a) candidato(a) poderá escolher desenvolver em Node.js (Adonis) ou PHP (Laravel).
+O desafio de back-end consiste em estruturar uma API RESTful e um banco de dados ligado a esta API. Trate-se de um sistema que permite cadastrar usuários externamente e, ao realizarem login, poderão registrar clientes, produtos e vendas. O(a) candidato(a) poderá escolher desenvolver em Node.js (Adonis) ou PHP (Laravel).
 
 
 ## Requisitos
@@ -221,45 +221,6 @@ Passar parâmetros no body da requisição em formato JSON:
 - Caso tenha interesse:
     - Faça o import no Postman do documento chamado `model_postman_collection.json` que está pasta `postman` para acessar o modelo de rotas da API testadas no Postman
 
-
-## Funcionalidades não atendidas e dificuldades encontradas
-
-- Da rota Listar todos os clientes cadastrados (index) não consegui manipular as compras do cliente.
-    Consegui somente mostrá-las.
-
-    Como exemplo abaixo:
-
-        {
-        "id": 1,
-        "name": "Nome cliente",
-        "cpf": "8833336566",
-        "email": "client@mail.com",
-        "created_at": "2022-05-01 21:16:24",
-        "updated_at": "2022-05-01 21:16:24",
-        "sales": [
-        {
-            "id": 1,
-            "amount": 5,
-            "unit_price": 20,
-            "total_price": 100,
-            "client_id": 1,
-            "product_id": 1,
-            "created_at": "2022-05-01 21:27:55",
-            "updated_at": "2022-05-01 21:27:55"
-        },
-        {
-            "id": 2,
-            "amount": 5,
-            "unit_price": 30,
-            "total_price": 150,
-            "client_id": 1,
-            "product_id": 2,
-            "created_at": "2022-05-01 21:28:57",
-            "updated_at": "2022-05-01 21:28:57"
-        } 
-        ]}
-
-    **Dificuldades**: não conhecia o framework AdonisJs, foi a minha primeira aplicação feita com ele, além ser iniciante na área e ainda precisar me desenvolver tecnicamente.
 ## Referência
 
  - [Documentação oficial AdonisJS](https://docs.adonisjs.com/guides/introduction)
@@ -270,5 +231,3 @@ Passar parâmetros no body da requisição em formato JSON:
 
 - [Bruna Hirano](https://github.com/brunahirano)
 
-## Considerações finais
-- Gostaria de agradecer a oportunidade de realizar este desafio técnico, pois com ele conheci um framework que nunca havia trabalhado, me desafiei e pude aprender e treinar minhas habilidades com Node.js.
